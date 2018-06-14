@@ -1,6 +1,6 @@
 # THIS MAKFILE IS GENERATED
 
-PACKAGES = nso-device-management dtp-network dtp-fop-link-network-device dtp-fop-node-network-device
+PACKAGES = dtp-network dtp-fop-link-network-device dtp-fop-node-network-device
 
 NETWORK = 
 

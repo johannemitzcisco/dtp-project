@@ -1,0 +1,41 @@
+<config xmlns="http://tail-f.com/ns/config/1.0">
+  <devices xmlns="http://tail-f.com/ns/ncs">
+  <device>
+    <name>csp2</name>
+    <address>10.2.1.13</address>
+    <port>2022</port>
+    <ssh>
+      <host-key>
+        <algorithm>ssh-dss</algorithm>
+        <key-data>AAAAB3NzaC1kc3MAAACBAOPblx7pyFWayOrFzM5pF33jY6C8fA5VWuG37BrlZ36g6rqaTSU3
+Y0cezScYO0EaDLEhtEoebkOIg35pgyQJ80Dc3OJuq92ziZ79x3jfqQtfZc4Z6u+kymdKTWQB
+zBCMUyvow/KZ69Wi1VmAWClWcgBn9H9kJoVtZqNQ01j604mzAAAAFQDWMwWn6SRgANbRLF8E
+VyLlGmZWqQAAAIBvnyowQYiNGbWCIx7Jsq7KJ4LmIKnwIYvITDO9VPY8VrxkPmY3+pD2lXOr
+8qDnoX/lpP0AgCBsK9PZPgBssg+55wJ1kG6pE1GF4ft/u595x3H6WZEVpKpJNr977bVOS3z3
+HeP89MtZFXNG7L6skDibhEnSNasF/E37oRw7gIn34QAAAIEA1y35Cx3FYdFvLHpNxMenvkI2
+2d7YgbMowcnw7CgjC//XrSrdncAfwG9YQwSDeS+B6g1iDIndF38abUVg3HtN9cR3tYFGdWQv
+DoFKVD4H0K3mu5hJMbiL9fqT15iCkZ+aTjVeEXTBCVTT7VyFHX1lJv3CjIN2DnF9Eq90+tcg
+u14=</key-data>
+      </host-key>
+      <host-key>
+        <algorithm>ssh-rsa</algorithm>
+        <key-data>AAAAB3NzaC1yc2EAAAADAQABAAABAQCqwPPoYJ1Yd5691/emZCtasi45PIdNil+UQ7K+0EOM
+6mzfXGE5D5XZ9mIIZ1pa/OSmE30GkqBMwHLy9dlGsvxBxtVjuvXPltF91DTZ1UG5lqxCz/Xz
+Ai/CEQxkGEPiJsP/dzrXT4Ru4rAfWDmKhy+HqfYUKKJSRP925pnZnGr1tK9gxjRG1VzL87ro
++vwwOj4HdiZCH337+in+wEd1yGNWfWnwRKx1PqnyNJQ74t8aFPDVZdI+9zinT4IQLtspkHE4
+1KMsds7Fwku+xiVGrnoG6uWXhnY02VVjQ7fhIbE8IUW5zeoTNIlT445o9kngs2cGAeCNuGUA
+JbhLi1oALStd</key-data>
+      </host-key>
+    </ssh>
+    <authgroup>csp</authgroup>
+    <device-type>
+      <netconf>
+        <ned-id xmlns:ned="http://tail-f.com/ns/ncs-ned">ned:netconf</ned-id>
+      </netconf>
+    </device-type>
+    <state>
+      <admin-state>unlocked</admin-state>
+    </state>
+  </device>
+  </devices>
+</config>

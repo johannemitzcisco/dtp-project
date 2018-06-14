@@ -8,26 +8,23 @@
 # include $(NSO_TOOLS_DIR)/setupsimulation.mk
 
 # The version of NSO to base this on
-NSO_VERSION = 4.6.1.1
+NSO_VERSION = 4.6.1
 # Directory where packages that should be included in the PROJECT_PACKAGES directory with
 # symbolic links
-LOCAL_PACKAGES_DIR = /Users/jnemitz/projects/packages
+LOCAL_PACKAGES_DIR = /opt/projects/packages
 # Packages that are in the LOCAL_PACKAGES_DIR that will be symbolically link in the PROJECT_PACKAGES
 # directory
-LOCAL_PACKAGES += dtp-network dtp-fop-node-network-device dtp-fop-link-network-device nso-device-management
-LOCAL_PACKAGES += dtp-deployment-netsim
+LOCAL_PACKAGES += dtp-network dtp-fop-node-network-device dtp-fop-link-network-device 
+#LOCAL_PACKAGES += dtp-deployment-netsim nso-device-management
 
 # List of simulated [device name prefixes:number of devices(0 if no netsim devices of this type should be created
 # but the NED should be present):device-types (NEDS)] that will be used
-# DEVICES = asr-nyc:1:cisco-iosxr asr-lon:1:cisco-iosxr ios:2:cisco-ios pnp-ned:0:cisco-pnp
-#DEVICES = asr-nyc:2:cisco-iosxr:sim asr-lon:2:cisco-iosxr:sim dummy::cisco-ios:real pnp-ned:0:cisco-pnp:real
-#DEVICES = asr-nyc:2:cisco-iosxr:sim asr-sfo:2:cisco-iosxr:sim asr-lon:2:cisco-iosxr:sim asr-ber:2:cisco-iosxr:sim asr-sin:2:cisco-iosxr:sim asr-tok:2:cisco-iosxr:sim 
-#DEVICES =  p1.fra:1:cisco-iosxr:sim p2.fra:1:cisco-iosxr:sim
-DEVICES += core-1:1:cisco-iosxr:sim
-#DEVICES += spine-1:0:cisco-nx:sim
+DEVICES += esc-ned:0:esc:ned-only
+DEVICES += csp-ned:0:csp:ned-only
+DEVICES += nexus-ned:0:cisco-nx:ned-only iosxr-ned:0:cisco-iosxr:ned-only
 
 # Where the NEDs are located and soft links will be created to
-NSO_NEDS = /Applications/Cisco/nso/neds/$(NSO_VERSION)
+NSO_NEDS = /opt/NSO/neds/$(NSO_VERSION)
 
 # The NETSIM directory to use
 NETSIM_DIR = netsim
@@ -45,4 +42,4 @@ PROJECT_PACKAGES = packages
 # Directories with where xml data files that should be loaded after NSO is started
 NSO_POST_START_DATA_DIR = project_data
 
-NSO_TOOLS_DIR=/Users/jnemitz/projects/nsotools
+NSO_TOOLS_DIR= /opt/nsotools

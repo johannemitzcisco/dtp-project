@@ -42,10 +42,10 @@
     <name>dtp-fop-link-network-device</name>
     <local/>
   </package>
-  <package>
+  <!-- package>
     <name>nso-device-management</name>
     <local/>
-  </package>
+  </package -->
   <!--
       for a full description on how packages can be specified,
       please see <NCS-DIR>/src/yang/tailf-ncs-project.yang.

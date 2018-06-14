@@ -6,13 +6,49 @@
         <name>BASIC-CDP</name>
         <template>dtp-fo-topology-cdp</template>
       </cdp>
+      <cluster xmlns="http://www.cisco.com/dtp-fo-cluster">
+        <name>BASIC-CLUSTER</name>
+        <template>dtp-fo-topology-cluster</template>
+      </cluster>
+      <dns xmlns="http://www.cisco.com/dtp-fo-dns">
+        <name>BASIC-DNS</name>
+        <template>dtp-fo-topology-dns</template>
+      </dns>
+      <domain xmlns="http://www.cisco.com/dtp-fo-domain">
+        <name>BASIC-DOMAIN</name>
+        <template>dtp-fo-topology-domain</template>
+      </domain>
+      <ntp xmlns="http://www.cisco.com/dtp-fo-ntp">
+        <name>BASIC-NTP</name>
+        <template>dtp-fo-topology-ntp</template>
+      </ntp>
     </topology>
     <node>
+      <dns xmlns="http://www.cisco.com/dtp-fo-dns">
+        <name>BASIC-DNS</name>
+        <template>dtp-fo-node-dns</template>
+      </dns>
+      <domain xmlns="http://www.cisco.com/dtp-fo-domain">
+        <name>BASIC-DOMAIN</name>
+        <template>dtp-fo-node-domain</template>
+      </domain>
       <hostname xmlns="http://www.cisco.com/dtp-fo-hostname">
         <name>BASIC-HOSTNAME</name>
         <template>dtp-fo-node-hostname</template>
       </hostname>
+      <ntp xmlns="http://www.cisco.com/dtp-fo-ntp">
+        <name>BASIC-NTP</name>
+        <template>dtp-fo-node-ntp</template>
+      </ntp>
     </node>
+    <link>
+      <side>
+        <cdp xmlns="http://www.cisco.com/dtp-fo-cdp">
+          <name>BASIC-CDP</name>
+          <template>dtp-fo-link-side-cdp</template>
+        </cdp>
+      </side>
+    </link>
   </function-object-definitions>
   </dtp>
 </config>
