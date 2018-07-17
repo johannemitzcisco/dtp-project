@@ -24,6 +24,9 @@
       </ntp>
     </topology>
     <node>
+      <csp2100-role xmlns="http://www.cisco.com/dtp-fo-csp2100-role">
+        <name>SAE</name>
+      </csp2100-role>
       <dns xmlns="http://www.cisco.com/dtp-fo-dns">
         <name>BASIC-DNS</name>
         <template>dtp-fo-node-dns</template>
@@ -36,6 +39,9 @@
         <name>BASIC-HOSTNAME</name>
         <template>dtp-fo-node-hostname</template>
       </hostname>
+      <nexus9k-role xmlns="http://www.cisco.com/dtp-fo-nexus9k-role">
+        <name>SAE</name>
+      </nexus9k-role>
       <ntp xmlns="http://www.cisco.com/dtp-fo-ntp">
         <name>BASIC-NTP</name>
         <template>dtp-fo-node-ntp</template>
@@ -48,6 +54,10 @@
           <template>dtp-fo-link-side-cdp</template>
         </cdp>
       </side>
+      <nexus-to-csp2100 xmlns="http://www.cisco.com/dtp-fo-compute-nexus">
+        <name>SAE</name>
+        <template>dtp-fo-link-csp2100-nexus</template>
+      </nexus-to-csp2100>
     </link>
   </function-object-definitions>
   </dtp>

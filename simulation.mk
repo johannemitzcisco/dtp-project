@@ -15,6 +15,7 @@ LOCAL_PACKAGES_DIR = /opt/projects/packages
 # Packages that are in the LOCAL_PACKAGES_DIR that will be symbolically link in the PROJECT_PACKAGES
 # directory
 LOCAL_PACKAGES += dtp-network dtp-fop-node-network-device dtp-fop-link-network-device 
+LOCAL_PACKAGES += dtp-fop-node-nexus9k dtp-fop-node-csp2100
 #LOCAL_PACKAGES += dtp-deployment-netsim nso-device-management
 
 # List of simulated [device name prefixes:number of devices(0 if no netsim devices of this type should be created
@@ -22,6 +23,7 @@ LOCAL_PACKAGES += dtp-network dtp-fop-node-network-device dtp-fop-link-network-d
 DEVICES += esc-ned:0:esc:ned-only
 DEVICES += csp-ned:0:csp:ned-only
 DEVICES += nexus-ned:0:cisco-nx:ned-only iosxr-ned:0:cisco-iosxr:ned-only
+DEVICES += xr:3:cisco-ios:sim
 
 # Where the NEDs are located and soft links will be created to
 NSO_NEDS = /opt/NSO/neds/$(NSO_VERSION)

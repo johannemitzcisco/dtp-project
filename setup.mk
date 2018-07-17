@@ -1,6 +1,6 @@
 # THIS MAKFILE IS GENERATED
 
-PACKAGES = dtp-network dtp-fop-link-network-device dtp-fop-node-network-device
+PACKAGES = dtp-network dtp-fop-node-nexus9k dtp-fop-node-csp2100 dtp-fop-link-network-device dtp-fop-node-network-device
 
 NETWORK = 
 

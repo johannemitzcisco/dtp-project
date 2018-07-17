@@ -42,6 +42,14 @@
     <name>dtp-fop-link-network-device</name>
     <local/>
   </package>
+  <package>
+    <name>dtp-fop-node-nexus9k</name>
+    <local/>
+  </package>
+  <package>
+    <name>dtp-fop-node-csp2100</name>
+    <local/>
+  </package>
   <!-- package>
     <name>nso-device-management</name>
     <local/>
